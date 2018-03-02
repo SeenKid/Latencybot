@@ -16,7 +16,7 @@ bot.on('ready', () => {
     bot.user.setPresence({game: { name: 'latencybot.simplesite.com', type: 0}});
 });
 
-bot.login('Mzk2MDM5MjgxMzg0MDk1NzU2.DSbn3g.3s3DWlqdc9FQFRrds-p94Zhx_14');
+bot.login(process.env.TOKEN);
 bot.on('message', message => {
 
 var msgauthor = message.author.id;
