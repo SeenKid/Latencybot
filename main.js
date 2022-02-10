@@ -445,44 +445,4 @@ db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] +=1}
                     .addField("XP (stocké dans une base de donnée) :",`${xpfinal[1]} xp`)
                 message.channel.send({embed: xp_embed});
             }
-            if (message.content === "juif") {
-                message.reply("#JUIF=RICHE");
-                console.log('juif');
-            }
-            if (message.content === "Juif") {
-                message.reply("#JUIF=RICHE");
-                console.log('Juif');
-            }
-            if (message.content === "Kakushimasu") {
-                message.reply("Un fils de pute de babw1 de merde.");
-                console.log('kaku');
-            }
-            
-
-           //  case "kick":
-               
-             //  if(!message.channel.permissionsFor(message.member).hasPermission("KICK_MEMBERS")) {
-               //    message.reply("Vous n'avez pas les permissions pour Kick !")
-               //}else {
-                 //  var memberkick = message.mentions.members.first();
-                   //console.log(memberkick)
-                   //console.log(message.guild.member(memberkick).kickable)
-                   //if(!memberkick) {
-                    //   message.reply("L'utilisatezr n'est pas présent.")
-                   //}else{
-                     //  if(!message.guild.member(memberkick).kickable){
-                       //    message.reply("Utilisateur impossible à kick ...")
-                       //}else{
-                        //message.guild.member(memberkick).kick().then((member) => {
-                        //message.channel.send(`${member.displayName} à été kick : Kick envoyé`);
-                       //}).catch(() => {
-                         //  message.channel.send("Kick Refusé !")
-                   //    })
-                  // }
-             //  }
-           // }
-            //   break;
- 
-           // }
-
 });
